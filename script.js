@@ -203,6 +203,36 @@
     });
 })();
 
+// Refund modal
+(function () {
+    var modal = document.getElementById("refund-modal");
+    var closeBtn = document.getElementById("refund-close");
+    var openBtn = document.getElementById("refund-open-pricing");
+
+    if (!modal) return;
+
+    if (openBtn) {
+        openBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            modal.classList.add("active");
+        });
+    }
+
+    closeBtn.addEventListener("click", function () {
+        modal.classList.remove("active");
+    });
+
+    modal.addEventListener("click", function (e) {
+        if (e.target === modal) modal.classList.remove("active");
+    });
+
+    document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && modal.classList.contains("active")) {
+            modal.classList.remove("active");
+        }
+    });
+})();
+
 // Smooth nav background on scroll
 (function () {
     const nav = document.querySelector(".nav");
