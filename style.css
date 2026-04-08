@@ -1207,6 +1207,13 @@ kbd {
     color: var(--text-secondary);
 }
 
+.pricing-trial {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-top: 8px;
+}
+
 .pricing-right {
     display: flex;
     flex-direction: column;
