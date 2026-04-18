@@ -2008,3 +2008,93 @@ kbd {
         margin-top: 36px;
     }
 }
+
+/* ========== Success Page (Payment Success) ========== */
+.success-page {
+    padding: 140px 24px 100px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.success-icon {
+    margin-bottom: 24px;
+}
+
+.success-container h1 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin-bottom: 16px;
+    color: var(--text);
+}
+
+.success-message {
+    font-size: 18px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.success-details {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius);
+    padding: 24px;
+    margin-bottom: 32px;
+    text-align: left;
+}
+
+.success-details p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.success-details p:last-child {
+    margin-bottom: 0;
+}
+
+.success-details a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.success-details a:hover {
+    opacity: 0.8;
+}
+
+.success-actions {
+    margin-bottom: 32px;
+}
+
+.success-help {
+    font-size: 14px;
+    color: var(--text-tertiary);
+}
+
+.success-help a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.success-help a:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .success-page {
+        padding: 120px 20px 80px;
+    }
+
+    .success-container h1 {
+        font-size: 28px;
+    }
+
+    .success-message {
+        font-size: 16px;
+    }
+}
