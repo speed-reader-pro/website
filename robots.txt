@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://speed-reader.pro/sitemap.xml
