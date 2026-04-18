@@ -1515,10 +1515,17 @@ kbd {
 
 .footer-brand {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
     font-weight: 600;
     font-size: 15px;
+}
+
+.footer-address {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--text-tertiary);
 }
 
 .footer-links {
@@ -1890,6 +1897,10 @@ kbd {
         flex-direction: column;
         gap: 20px;
         text-align: center;
+    }
+
+    .footer-brand {
+        align-items: center;
     }
 }
 
