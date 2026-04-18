@@ -1214,6 +1214,13 @@ kbd {
     margin-top: 8px;
 }
 
+.pricing-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 8px;
+}
+
 .pricing-right {
     display: flex;
     flex-direction: column;
@@ -1882,6 +1889,8 @@ kbd {
     .comparison-rsvp-text { font-size: 26px; }
 
     .pricing-container { grid-template-columns: 1fr; gap: 32px; padding: 32px; }
+    .pricing-actions { flex-direction: column; }
+    .pricing-actions .btn { width: 100%; }
 
     .contact-grid { grid-template-columns: 1fr; }
 

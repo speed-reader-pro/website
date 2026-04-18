@@ -86,10 +86,10 @@ window.paywall={paywallContainerId:"",shadowRoot:null,_paywallId:null,_isInitial
                 <a href="#features">Features</a>
                 <a href="#modes">Modes</a>
                 <a href="#formats">Formats</a>
-                <a href="#pricing">Pricing</a>
+                <a href="#download-section">Download</a>
                 <a href="#contact">Contact</a>
             </div>
-            <a href="#pricing" class="btn btn-sm" data-umami-event="download-nav">Download</a>
+            <a href="#download-section" class="btn btn-sm" data-umami-event="download-nav">Download</a>
         </div>
     </nav>
 
@@ -105,8 +105,8 @@ window.paywall={paywallContainerId:"",shadowRoot:null,_paywallId:null,_isInitial
             Articles, books, PDFs — anywhere on your Mac.
         </p>
         <div class="hero-cta">
-            <a href="https://github.com/speed-reader-pro/speed-reader-app-releases/releases/latest/download/SpeedReader.dmg" class="btn btn-lg" data-umami-event="download-hero">Download for macOS</a>
-            <span class="hero-req">macOS 14+</span>
+            <a href="#download-section" class="btn btn-lg" data-umami-event="download-hero">Download for macOS</a>
+            <span class="hero-req">macOS 14+ · 3-day free trial</span>
         </div>
 
         <!-- Hero visual: Speed comparison -->
@@ -358,11 +358,11 @@ window.paywall={paywallContainerId:"",shadowRoot:null,_paywallId:null,_isInitial
         </div>
     </section>
 
-    <!-- Pricing -->
-    <section class="pricing" id="pricing">
+    <!-- Download & Pricing -->
+    <section class="pricing" id="download-section">
         <div class="section-header">
-            <h2>Simple pricing</h2>
-            <p class="section-subtitle">One payment. Lifetime access. No subscriptions.</p>
+            <h2>Download & Activate</h2>
+            <p class="section-subtitle">Start with a free trial, then unlock lifetime access</p>
         </div>
 
         <div class="pricing-container">
@@ -370,7 +370,10 @@ window.paywall={paywallContainerId:"",shadowRoot:null,_paywallId:null,_isInitial
                 <h3 class="pricing-title">Lifetime License</h3>
                 <p class="pricing-subtitle">One payment of <span class="pricing-highlight">$8.99</span>. Lifetime access to every update.</p>
                 <p class="pricing-trial">Start with a <strong>3-day free trial</strong> — no payment required. Try all features before you buy.</p>
-                <button class="btn btn-lg" data-umami-event="download-pricing" onclick="openPaywall()">Purchase License</button>
+                <div class="pricing-actions">
+                    <button class="btn btn-lg" data-umami-event="activate-pricing" onclick="openPaywall()">Activate License</button>
+                    <a href="https://github.com/speed-reader-pro/speed-reader-app-releases/releases/latest/download/SpeedReader.dmg" class="btn btn-lg btn-outline" data-umami-event="download-pricing">Download App</a>
+                </div>
             </div>
 
             <div class="pricing-right">
