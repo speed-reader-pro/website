@@ -1537,6 +1537,13 @@ kbd {
 
 .footer-links {
     display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-end;
+}
+
+.footer-links-row {
+    display: flex;
     gap: 24px;
 }
 
@@ -1910,6 +1917,15 @@ kbd {
 
     .footer-brand {
         align-items: center;
+    }
+
+    .footer-links {
+        align-items: center;
+    }
+
+    .footer-links-row {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
