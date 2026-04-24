@@ -268,3 +268,18 @@
         });
     });
 })();
+
+// Copy brew command
+function copyBrewCommand(button) {
+    const command = "brew install --cask speed-reader-pro/tap/speed-reader";
+    navigator.clipboard.writeText(command).then(function () {
+        const originalText = button.querySelector(".brew-copy-text").textContent;
+        button.classList.add("copied");
+        button.querySelector(".brew-copy-text").textContent = "Copied!";
+
+        setTimeout(function () {
+            button.classList.remove("copied");
+            button.querySelector(".brew-copy-text").textContent = originalText;
+        }, 2000);
+    });
+}

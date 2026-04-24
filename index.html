@@ -374,6 +374,7 @@ window.paywall={paywallContainerId:"",shadowRoot:null,_paywallId:null,_isInitial
                     <button class="btn btn-lg" data-umami-event="activate-pricing" onclick="openPaywall()">Activate License</button>
                     <a href="https://github.com/speed-reader-pro/speed-reader-app-releases/releases/latest/download/SpeedReader.dmg" class="btn btn-lg btn-outline" data-umami-event="download-pricing">Download App</a>
                 </div>
+
             </div>
 
             <div class="pricing-right">
@@ -389,6 +390,23 @@ window.paywall={paywallContainerId:"",shadowRoot:null,_paywallId:null,_isInitial
                             If you need Speed Reader for medical reasons (central field loss, peripheral reading assistance, or other vision-related conditions), please <a href="mailto:support@speed-reader.pro">contact us</a> to receive a free license.
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="brew-install">
+                <div class="brew-header">
+                    <span class="brew-label">Or install with Homebrew</span>
+                    <button class="brew-copy" onclick="copyBrewCommand(this)" aria-label="Copy command">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                        <span class="brew-copy-text">Copy</span>
+                    </button>
+                </div>
+                <div class="brew-command-wrapper">
+                    <span class="brew-prompt">$</span>
+                    <code class="brew-command">brew install --cask speed-reader-pro/tap/speed-reader</code>
                 </div>
             </div>
         </div>
