@@ -83,6 +83,9 @@ a {
     gap: 8px;
     font-family: inherit;
     font-weight: 600;
+    line-height: 1;
+    appearance: none;
+    -webkit-appearance: none;
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -1221,6 +1224,10 @@ kbd {
     margin-top: 0;
 }
 
+.pricing-actions .btn {
+    min-width: 220px;
+}
+
 .brew-install {
     display: flex;
     flex-direction: column;
@@ -1977,8 +1984,14 @@ kbd {
     .comparison-rsvp-text { font-size: 26px; }
 
     .pricing-container { grid-template-columns: 1fr; gap: 32px; padding: 32px; }
-    .pricing-actions { flex-direction: column; }
-    .pricing-actions .btn { width: 100%; }
+    .pricing-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .pricing-actions .btn {
+        width: min(100%, 385px);
+        max-width: 385px;
+    }
     .brew-install { margin-top: 0; }
     .brew-header { padding: 8px 12px; }
     .brew-label { font-size: 11px; }
