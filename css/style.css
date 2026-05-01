@@ -1591,7 +1591,7 @@ kbd {
 
 /* ========== Footer ========== */
 .footer {
-    padding: 24px;
+    padding: 48px 24px;
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
     background: rgba(255, 255, 255, 0.9);
@@ -1604,50 +1604,81 @@ kbd {
     max-width: var(--max-width);
     margin: 0 auto;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-}
-
-.footer-brand {
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    gap: 6px;
-    font-weight: 600;
-    font-size: 15px;
+    gap: 48px;
 }
 
-.footer-address {
-    font-size: 13px;
-    font-weight: 400;
-    color: var(--text-tertiary);
-}
-
-.footer-links {
+.footer-brand-col {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    align-items: flex-end;
+    gap: 20px;
 }
 
-.footer-links-row {
+.footer-brand-logo {
     display: flex;
-    gap: 24px;
+    align-items: center;
+    gap: 10px;
 }
 
-.footer-links a {
-    font-size: 14px;
-    color: var(--text-tertiary);
-    transition: color 0.2s;
+.footer-brand-logo img {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
 }
 
-.footer-links a:hover {
+.footer-brand-name {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text);
+}
+
+.footer-address-block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.footer-address-company {
+    font-size: 13px;
+    font-weight: 600;
     color: var(--text-secondary);
 }
 
-.footer-copy {
+.footer-address-text {
     font-size: 13px;
     color: var(--text-tertiary);
+    line-height: 1.6;
+}
+
+.footer-cols {
+    display: flex;
+    gap: 64px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-col-title {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.footer-col a {
+    font-size: 14px;
+    color: var(--text-secondary);
+    transition: color 0.2s;
+}
+
+.footer-col a:hover {
+    color: var(--text);
 }
 
 /* ========== Refund Modal ========== */
@@ -2015,21 +2046,11 @@ kbd {
 
     .footer-inner {
         flex-direction: column;
-        gap: 20px;
-        text-align: center;
+        gap: 32px;
     }
 
-    .footer-brand {
-        align-items: center;
-    }
-
-    .footer-links {
-        align-items: center;
-    }
-
-    .footer-links-row {
-        flex-wrap: wrap;
-        justify-content: center;
+    .footer-cols {
+        gap: 40px;
     }
 }
 
