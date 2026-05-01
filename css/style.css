@@ -1505,7 +1505,7 @@ kbd {
 /* ========== Browser Extension ========== */
 .extension {
     padding: 40px 24px 60px;
-    max-width: 700px;
+    max-width: 620px;
     margin: 0 auto;
     position: relative;
 }
@@ -1516,57 +1516,67 @@ kbd {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
-    height: 400px;
-    background: radial-gradient(ellipse, rgba(220, 40, 30, 0.08) 0%, transparent 60%);
+    width: 72%;
+    height: 320px;
+    background: radial-gradient(ellipse, rgba(220, 40, 30, 0.04) 0%, transparent 62%);
     pointer-events: none;
-    filter: blur(60px);
+    filter: blur(72px);
 }
 
 .extension-container {
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.62);
+    backdrop-filter: blur(16px);
     border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: var(--radius-xl);
-    padding: 48px;
+    padding: 36px 32px;
     position: relative;
     z-index: 1;
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
     text-align: center;
+}
+
+.extension-kicker {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+    margin-bottom: 14px;
 }
 
 .extension-badge {
     display: inline-block;
     font-size: 13px;
     font-weight: 600;
-    color: #22c55e;
-    background: rgba(34, 197, 94, 0.1);
-    border: 1px solid rgba(34, 197, 94, 0.2);
+    color: var(--text-secondary);
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     padding: 6px 14px;
     border-radius: var(--radius-pill);
     margin-bottom: 16px;
 }
 
 .extension-content h2 {
-    font-size: 32px;
+    font-size: 26px;
     font-weight: 700;
     letter-spacing: -0.02em;
     color: var(--text);
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 
 .extension-content > p {
-    font-size: 17px;
+    font-size: 15px;
     color: var(--text-secondary);
-    line-height: 1.7;
-    margin-bottom: 24px;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 .extension-features {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    margin-bottom: 32px;
+    gap: 10px;
+    margin-bottom: 24px;
     align-items: center;
 }
 
@@ -1574,7 +1584,7 @@ kbd {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 15px;
+    font-size: 14px;
     color: var(--text-secondary);
 }
 
@@ -1591,7 +1601,7 @@ kbd {
 
 /* ========== Footer ========== */
 .footer {
-    padding: 24px;
+    padding: 48px 24px;
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
     background: rgba(255, 255, 255, 0.9);
@@ -1604,50 +1614,81 @@ kbd {
     max-width: var(--max-width);
     margin: 0 auto;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-}
-
-.footer-brand {
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    gap: 6px;
-    font-weight: 600;
-    font-size: 15px;
+    gap: 48px;
 }
 
-.footer-address {
-    font-size: 13px;
-    font-weight: 400;
-    color: var(--text-tertiary);
-}
-
-.footer-links {
+.footer-brand-col {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    align-items: flex-end;
+    gap: 20px;
 }
 
-.footer-links-row {
+.footer-brand-logo {
     display: flex;
-    gap: 24px;
+    align-items: center;
+    gap: 10px;
 }
 
-.footer-links a {
-    font-size: 14px;
-    color: var(--text-tertiary);
-    transition: color 0.2s;
+.footer-brand-logo img {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
 }
 
-.footer-links a:hover {
+.footer-brand-name {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text);
+}
+
+.footer-address-block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.footer-address-company {
+    font-size: 13px;
+    font-weight: 600;
     color: var(--text-secondary);
 }
 
-.footer-copy {
+.footer-address-text {
     font-size: 13px;
     color: var(--text-tertiary);
+    line-height: 1.6;
+}
+
+.footer-cols {
+    display: flex;
+    gap: 64px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-col-title {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.footer-col a {
+    font-size: 14px;
+    color: var(--text-secondary);
+    transition: color 0.2s;
+}
+
+.footer-col a:hover {
+    color: var(--text);
 }
 
 /* ========== Refund Modal ========== */
@@ -2015,21 +2056,11 @@ kbd {
 
     .footer-inner {
         flex-direction: column;
-        gap: 20px;
-        text-align: center;
+        gap: 32px;
     }
 
-    .footer-brand {
-        align-items: center;
-    }
-
-    .footer-links {
-        align-items: center;
-    }
-
-    .footer-links-row {
-        flex-wrap: wrap;
-        justify-content: center;
+    .footer-cols {
+        gap: 40px;
     }
 }
 
