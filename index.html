@@ -540,14 +540,6 @@ window.paywall={paywallContainerId:"",shadowRoot:null,_paywallId:null,_isInitial
             }
         }
     }
-
-    // Auto-open paywall via ?paywall=open (used by the macOS app's Contact Support / Restore Purchases buttons)
-    window.addEventListener('DOMContentLoaded', function () {
-        var params = new URLSearchParams(window.location.search);
-        if (params.get('paywall') === 'open') {
-            setTimeout(openPaywall, 400);
-        }
-    });
     </script>
 </body>
 </html>
